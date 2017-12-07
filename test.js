@@ -61,11 +61,13 @@ function LinkedList(){
 			this.root = node;
 		}
 	};
+
+	//this needs to be modified
 	this.addAt= function(value, index){
 		let node = new Node(value);
 		let curr = this.root;
 		let prev = null;
-		let i = 0
+		let i = 0;
 		while (i !== index) {
 			prev == curr;
 			curr == curr.next;
@@ -73,7 +75,7 @@ function LinkedList(){
 			if (curr===null){
 				return false
 			};
-		}
+		};
 		node.next = curr;
 		if (prev) {
 			prev.next = node;
@@ -81,6 +83,7 @@ function LinkedList(){
 			this.root=node;
 		}
 	};
+
 	this.addAt1= function(value, index){
 		let node = new Node(value);
 		let prev = null;
